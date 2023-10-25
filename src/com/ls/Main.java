@@ -6,7 +6,8 @@ public class Main {
             var ls = new Ls(args);
             ls.run();
         } catch(BadArgumentException e) {
-            System.out.println("Bad or unexpected argument: " + e.arg);
+            System.err.println("Bad or unexpected argument: " + e.arg);
+            System.exit(1);
         }
     }
 }
