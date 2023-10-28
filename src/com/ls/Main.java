@@ -8,6 +8,9 @@ public class Main {
         } catch(BadArgumentException e) {
             System.err.println("Bad or unexpected argument: " + e.arg);
             System.exit(1);
+        } catch (Exception e) {
+            System.err.println("An error occurred: " + e.getMessage());
+            System.exit(1);
         }
     }
 }
