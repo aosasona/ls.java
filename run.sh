@@ -1,2 +1,3 @@
 javac ./src/com/ls/*.java
-java -cp ./src com.ls.Main $1
+# shellcheck disable=SC2068
+java -cp ./src com.ls.Main $@
